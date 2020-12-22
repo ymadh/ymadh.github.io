@@ -1,0 +1,16 @@
+{
+   "Realtor": {
+       "name": "string",
+       "email": "string",
+       "active": "boolean",
+       "createdAt": "date"
+   },
+   "House": {
+       "address": "string",
+       "quote": "int",
+       "sold": "boolean",
+       "price": "int",
+       "createdAt": "date",
+       "realtor": "Realtor"
+   }
+}
