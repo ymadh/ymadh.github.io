@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+$theme-colors: (
+  "primary": #0e76a8,
+  "light": #f6f6f2,
+
+);
+
+// $btn-border-radius: 3000px;
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #1666C5;
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@import "~bootstrap/scss/bootstrap";
+
+header {
+  border-bottom: 1px solid lightgray;
+  img {
+    width: 100px;
+    height: 100px;
+    margin-top: -5px;
+  }
+  
+}
+main {
+  padding: 10px;
+}
+// overrides
+li.navbar-brand {
+  top: 10px;
+  font-size: 14px;
+  margin-left: 5px;
+  margin-right: 5px;
+  a {
+    color: darkslategray;
+   
+  }
+  a:hover {
+    color: $primary;
+    text-decoration: none;
+    border-bottom: 2px solid $primary;
+
+  }
+  i {
+    margin-bottom: 3px;
+    display: block;
+    
+  }
+  i:hover {
+    color: $primary;
+    cursor: pointer;
+
+  }
+  .active {
+    color: $primary;
+    border-bottom: 2px solid $primary;
+  }
+ 
+}
+
+
+section {
+  background-color: white;
+  border: 1px solid lightgray;
+  margin: 20px;
+}
+
+select.btn-mini {
+  height: auto;
+  line-height: 14px;
+  
+}
+
+/* this is optional (see below) */
+select.btn-mini {
+  border: 1px solid lightgrey;
+  font-size: 14px;
+}
+
+h2 {
+  font-family: 'Yellowtail', cursive;
+  font-size: 42px;
+  color: $primary;
+}
+
+.navbar li {
+  padding-top: 18px;
+}
+
+p, td {
+  color: darkslategray;
+}
+
+hr {
+  
+  width: 50%;
+ 
+}

@@ -1,0 +1,27 @@
+
+
+/* make the customizations */
+$light: #c0deed;
+
+$primary: #0084b4;
+$danger: #e63946;
+$success: #1dcaff;
+
+/* import bootstrap to set changes */
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+h1 {
+    font-size: 24px;
+    color: $primary;
+
+  }
+
+  .card-img-top {
+    max-width:350px;
+    
+  }
+
+  .cursor-pointer:hover {
+    cursor: pointer;
+  }
