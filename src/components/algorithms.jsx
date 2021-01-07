@@ -9,7 +9,7 @@ const Algorithms = () => {
                 <div className="row py-lg-5">
                     <div className="col-lg-6 col-md-8 mx-auto">
                         <h3>Algorithms</h3>
-                 
+                         <p>Coming Soon.</p>
                     </div>
                 </div>
             </section>

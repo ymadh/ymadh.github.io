@@ -5,7 +5,7 @@ const Header = () => {
         <header>
             <nav class="row navbar navbar-light bg-white">
                 <div className="col-1 text-right offset-md-1">
-                    <img className="rounded-circle" src="https://media-exp1.licdn.com/dms/image/C4D03AQEqTr3b0p-IjA/profile-displayphoto-shrink_200_200/0/1600640077493?e=1615420800&amp;v=beta&amp;t=WVmPIY8lvEnWoXVjmX5AiL8vnbjSlgkCpLG4BA1pKO0" />
+                    <img alt="Amy Wightman" className="rounded-circle" src="https://media-exp1.licdn.com/dms/image/C4D03AQEqTr3b0p-IjA/profile-displayphoto-shrink_200_200/0/1600640077493?e=1615420800&amp;v=beta&amp;t=WVmPIY8lvEnWoXVjmX5AiL8vnbjSlgkCpLG4BA1pKO0" />
                 </div>
                 <div className="col-md-4">
                     <h2>Amy Wightman</h2>

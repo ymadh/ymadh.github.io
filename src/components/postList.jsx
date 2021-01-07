@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useSelector, useDispatch, useStore } from 'react-redux';
 import { getPaginatedBlogPosts, changeNumBlogs, numBlogsSelector, changeCurrentPage } from '../store/blogSlice';
 import Pagination from './common/pagination';
@@ -25,12 +25,13 @@ const PostList = () => {
         dispatch(changeCurrentPage(value));
     }
   
-    console.log(posts);
-
     return (  
         <div className="container">
         <div className="row  m-2"> 
-            <div className="col-md-2 offset-md-10">
+            <div className="col-md-1 offset-md-9">
+                Page {currentPage}   
+            </div>
+            <div className="col-md-2">
                 <select onChange={handleNumChange} className="btn-mini">
                 <option value="">Show</option>
                     {numItemsArr.map((item) => <option key={item} value={item}>{item}</option>)}
@@ -48,7 +49,7 @@ const PostList = () => {
                             <p className="card-text">
                             {post.body}
                             </p>
-                            <a className="btn btn-primary">Go somewhere</a>
+                            
                         </div>
                     </div>
                 );

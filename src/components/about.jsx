@@ -1,7 +1,6 @@
 import React from 'react';
-import NitroImage from '../nitro.jpg';
-
-import TurboImage from '../turbo.jpg';
+import NitroImage from '../assets/nitro.jpg';
+import TurboImage from '../assets/turbo.jpg';
 
 const About = () => {
     return (
@@ -27,10 +26,10 @@ const About = () => {
                 </p>
                 <div className="row justify-content-md-center mb-3"> 
                     <div className="col-md-auto">
-                        <img className="rounded" height="250px" src={NitroImage} />
+                        <img alt="Nitro" className="rounded" height="250px" src={NitroImage} />
                     </div>
                     <div className="col-md-auto">
-                     <img className="rounded" height="250px" src={TurboImage} />
+                     <img alt="Turbo" className="rounded" height="250px" src={TurboImage} />
                     </div>
                 </div>
                 

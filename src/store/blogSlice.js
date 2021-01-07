@@ -1,6 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { apiCallBegan } from './api';
-import { dispatch } from 'react-redux';
 import * as config from '../config.json';      
 import { createSelector } from 'reselect';
 

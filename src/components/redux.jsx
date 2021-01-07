@@ -67,8 +67,12 @@ function ReduxText() {
         <div>
             <hr />
             <p>Store: React / Redux exaple of a shopping cart</p>
+            <hr />
             
             <p>Blog Posts: React / Redux example of a list of blog posts with pagination</p>
+            <p>Fetches a list of blogs from https://jsonplaceholder.typicode.com/ - features include
+                pagination / changing the number of items per page, disabling buttons - all in redux & react.
+            </p>
         </div>
     );
 }
