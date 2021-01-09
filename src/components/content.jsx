@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route} from 'react-router-dom';
+import { Switch, Route, HashRouter } from 'react-router-dom';
 
 import Redux from './redux';
 import Topics from './topics';
@@ -8,7 +8,7 @@ import NoMatch from './noMatch';
 
 const Content = () => {
     return ( 
-        <Switch>
+        <HashRouter>
             <Route path="/redux">
                 <Redux />
             </Route>
@@ -21,7 +21,7 @@ const Content = () => {
              <Route path="*">
                 <NoMatch />
             </Route>
-        </Switch>
+        </HashRouter>
         
      );
 }
