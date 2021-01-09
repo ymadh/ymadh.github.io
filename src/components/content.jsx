@@ -1,6 +1,5 @@
 import React from 'react';
-import { Switch, Route, HashRouter } from 'react-router-dom';
-
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import Redux from './redux';
 import Topics from './topics';
 import About from './about';
@@ -9,6 +8,7 @@ import NoMatch from './noMatch';
 const Content = () => {
     return ( 
         <HashRouter>
+            <Switch>
             <Route path="/redux">
                 <Redux />
             </Route>
@@ -18,9 +18,10 @@ const Content = () => {
              <Route path="/" exact>
                 <About />
              </Route>
-             <Route path="*">
+             <Route>
                 <NoMatch />
             </Route>
+            </Switch>
         </HashRouter>
         
      );
