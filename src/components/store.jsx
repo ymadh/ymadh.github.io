@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { Route, Switch } from 'react-router-dom';
 
-import { loadProducts } from '../store/cartSlice';
+import { loadProducts, getProducts } from '../store/cartSlice';
 import ProductList from './products/productList';
 import ShoppingCartIcon from './products/shoppingCartIcon';
 import CartList from './cart/cartList';
@@ -11,11 +11,17 @@ const Store = () => {
 
   const dispatch = useDispatch();
 
+  const numProducts = useSelector(getProducts);
   useEffect(() => {
-    dispatch(loadProducts());
 
 
-  }, [dispatch]);
+    if (numProducts.length === 0) {
+      dispatch(loadProducts());
+
+    }
+
+
+  }, []);
 
   return ( 
     <Switch>
