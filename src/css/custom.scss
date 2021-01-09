@@ -2,7 +2,7 @@
 
 $theme-colors: (
   "primary": #0e76a8,
-  "light": #f6f6f2,
+  "light": #f6f6f2
 
 );
 
@@ -23,6 +23,7 @@ code {
 }
 
 @import "~bootstrap/scss/bootstrap";
+@import "cart.scss";
 
 header {
   border-bottom: 1px solid lightgray;
@@ -91,7 +92,6 @@ select.btn-mini {
 h2 {
   font-family: 'Yellowtail', cursive;
   font-size: 42px;
-  color: $primary;
 }
 
 .navbar li {
@@ -106,4 +106,8 @@ hr {
   
   width: 50%;
  
+}
+
+.brand {
+  color: #ff78cb;
 }

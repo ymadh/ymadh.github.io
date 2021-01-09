@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { apiCallBegan } from './api';
 import * as config from '../config.json';      
 import { createSelector } from 'reselect';
 
@@ -34,15 +33,6 @@ export default blogSlice.reducer;
 
 const url = 'posts';
 
-// actions - to chain some actions
-// so call api add bug then bug added
-  export const createBlogPost = blog =>
-  apiCallBegan({
-    url,
-    method: "post",
-    data: blog,
-    onSuccess: addBlogPost.type
-  });
 
   export function getBlogPosts() {
       return async dispatch => {

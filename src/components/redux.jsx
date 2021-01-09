@@ -46,6 +46,7 @@ const Redux = () => {
                         <Route path="/redux/store">
                             <Store />
                         </Route>
+                        
                         <Route path="/redux" exact>
                             <ReduxText />
                         </Route>
@@ -67,6 +68,10 @@ function ReduxText() {
         <div>
             <hr />
             <p>Store: React / Redux exaple of a shopping cart</p>
+            <p>Using a list of images from jsonplaceholder, I add in a random value for the pricing
+                and automatically add a few items to the cart. From there a regular cart type experience
+                happens.
+            </p>
             <hr />
             
             <p>Blog Posts: React / Redux example of a list of blog posts with pagination</p>

@@ -4,7 +4,7 @@ const NoMatch = () => {
     let location = useLocation();
 
     return (
-      <div>
+      <div className="container">
         <p>
           No match for <code>{location.pathname}</code>
         </p>

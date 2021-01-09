@@ -8,8 +8,9 @@ const About = () => {
 
         <section className="container">
                 
-                <h3 className="text-center">About Me!</h3>
+                <h3 className="mt-3 text-center "><i className="brand fa fa-free-code-camp"></i> About Me!</h3>
                 <hr />
+                
                 <p>As a full stack developer for the last 10+ years I have worked with product managers and owners
                     to developer fully functioning high quality websites. I have been fortunate to work on commercial software
                     products as well as internal tools to help businesses grow and succeed. 

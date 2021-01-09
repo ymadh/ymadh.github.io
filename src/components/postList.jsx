@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch, useStore } from 'react-redux';
-import { getPaginatedBlogPosts, changeNumBlogs, numBlogsSelector, changeCurrentPage } from '../store/blogSlice';
+import { getPaginatedBlogPosts, changeNumBlogs, numBlogsSelector, changeCurrentPage, getBlogPosts } from '../store/blogSlice';
 import Pagination from './common/pagination';
 
 const PostList = () => {
@@ -25,6 +25,13 @@ const PostList = () => {
         dispatch(changeCurrentPage(value));
     }
   
+
+    useEffect(() => {
+        dispatch(getBlogPosts());
+
+
+    }, [dispatch]);
+
     return (  
         <div className="container">
         <div className="row  m-2"> 
