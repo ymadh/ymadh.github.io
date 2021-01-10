@@ -21,7 +21,7 @@ const Store = () => {
     }
 
 
-  }, []);
+  }, [dispatch, numProducts]);
 
   return ( 
     <Switch>
