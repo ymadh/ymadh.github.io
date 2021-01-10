@@ -1,0 +1,11 @@
+{
+    "id": 1,
+    "name": "Test User",
+    "username": "tuser",
+    "email": "test@mailinator.com",
+    "address": {
+        "street": "1234 anywhere street",
+        "city": "anytown",
+        "state": "NC"
+    }
+}
