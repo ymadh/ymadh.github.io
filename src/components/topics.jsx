@@ -13,6 +13,7 @@ const Topics = () => {
             <div className="container">
 
                         <h2 className="text-center">Testing / Playground</h2>
+                        <p>This is an area to play with a variety of concepts.</p>
                             <ul className="secondaryNav nav nav-links mt-3">
                                 <li className="nav-item">
                                     <NavLink exact activeClassName="active" className="nav-link" to="/topics">Home</NavLink>
