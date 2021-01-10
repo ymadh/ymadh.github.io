@@ -8,7 +8,7 @@ const About = () => {
 
         <section className="container">
                 
-                <h3 className="mt-3 text-center "><i className="brand fa fa-free-code-camp"></i> About Me!</h3>
+                <h2 className="mt-3 text-center "><i className="brand fa fa-free-code-camp"></i> About Me!</h2>
                 <hr />
                 
                 <p>As a full stack developer for the last 10+ years I have worked with product managers and owners

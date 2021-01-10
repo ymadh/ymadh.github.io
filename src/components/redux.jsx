@@ -12,7 +12,7 @@ const Redux = () => {
                 <section className="py-3 text-center">
                     <div className="row py-lg-5">
                         <div className="col-lg-6 col-md-8 mx-auto">
-                            <h3>Welcome</h3>
+                            <h2>Redux Examples</h2>
                             <hr />
                             
                             <a href="https://github.com/ymadh/ymadh.github.io" className="btn btn-secondary">Checkout my source code</a>
