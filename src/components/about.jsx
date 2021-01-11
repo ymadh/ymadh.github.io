@@ -12,7 +12,7 @@ const About = () => {
                 <hr />
                 
                 <p>As a full stack developer for the last 10+ years I have worked with product managers and owners
-                    to developer fully functioning high quality websites. I have been fortunate to work on commercial software
+                    to develope fully functioning high quality websites. I have been fortunate to work on commercial software
                     products as well as internal tools to help businesses grow and succeed. 
                 </p>
                 <p>I enjoy working with all types of technology and try to spend my free time reading books, taking courses
