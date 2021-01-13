@@ -61,19 +61,19 @@ export default cartSlice.reducer;
 
 // takes the free api url for photos
 // adds a random price to the info
-const url = 'photos';
+const url = 'products';
 export function loadProducts() {
   
   return async dispatch => {
    
     try {
-      const response = await fetch(config.apiUrl + url);
+      const response = await fetch(config.productApi + url);
       const data = await response.json();
 
       // only need 10 items.
-      dispatch(storeProducts(data.splice(0,10)));
+      dispatch(storeProducts(data));
     } catch (error) {
-      console.log(error);
+      console.log('failed'+ error);
     }
   }
 };

@@ -12,10 +12,11 @@ const Redux = () => {
                 <section className="py-3 text-center">
                     <div className="row py-lg-5">
                         <div className="col-lg-6 col-md-8 mx-auto">
-                            <h2>Redux Examples</h2>
+                            <h2>React / Redux / Node Examples</h2>
                             <hr />
                             
-                            <a href="https://github.com/ymadh/ymadh.github.io" className="btn btn-secondary">Checkout my source code</a>
+                            <a href="https://github.com/ymadh/ymadh.github.io" className="mr-3 btn btn-secondary">React Repo</a>
+                            <a href="https://github.com/ymadh/node" className="btn btn-secondary">Node Repo</a>
 
                         </div>
                     </div>
