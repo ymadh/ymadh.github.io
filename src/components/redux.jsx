@@ -68,14 +68,15 @@ function ReduxText() {
     return (
         <div>
             <hr />
-            <p>Store: React / Redux exaple of a shopping cart</p>
-            <p>Using a list of images from jsonplaceholder, I add in a random value for the pricing
-                and automatically add a few items to the cart. From there a regular cart type experience
-                happens.
+            <h3>Store</h3>
+            <p><strong>React, Redux</strong> and <strong>Node</strong> example of a shopping cart</p>
+            <p>This app connects to a node based api hosted on Heroku. It pulls a list of products and stores it in the
+                redux store. Still left to tackle - adding JWT authentication and a sample admin area for managing products.
             </p>
             <hr />
             
-            <p>Blog Posts: React / Redux example of a list of blog posts with pagination</p>
+            <h3>Blog Posts</h3>
+                <p><strong>React / Redux</strong> example of a list of blog posts with pagination</p>
             <p>Fetches a list of blogs from https://jsonplaceholder.typicode.com/ - features include
                 pagination / changing the number of items per page, disabling buttons - all in redux & react.
             </p>
