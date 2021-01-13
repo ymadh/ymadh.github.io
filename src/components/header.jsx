@@ -19,7 +19,7 @@ const Header = () => {
                             </NavLink>
                         </li>
                         <li className="list-inline-item navbar-brand">
-                            <NavLink to="/redux" activeClassName="active"><i className="fa fa-lock fa-lg"></i>React</NavLink>
+                            <NavLink to="/redux" activeClassName="active"><i className="fa fa-free-code-camp fa-lg"></i>Code</NavLink>
                         </li>
                         <li className="list-inline-item navbar-brand">
                             <NavLink to="/topics" activeClassName="active">
