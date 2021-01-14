@@ -50,11 +50,14 @@ const cartSlice = createSlice({
 
         }
       })
+    },
+    toggleLoading: (state, action) => {
+      state.loading = !state.loading;
     }
   }
 });
 
-export const { storeProducts, addProductToCart,changeQuantity, removeProduct } = cartSlice.actions;
+export const { storeProducts, addProductToCart,changeQuantity, removeProduct, toggleLoading } = cartSlice.actions;
 
 export default cartSlice.reducer;
 
@@ -67,20 +70,35 @@ export function loadProducts() {
   return async dispatch => {
    
     try {
+      dispatch(toggleLoading());
+     
       const response = await fetch(config.productApi + url);
       const data = await response.json();
 
       // only need 10 items.
       dispatch(storeProducts(data));
+      dispatch(toggleLoading());
+
+     
+     
     } catch (error) {
       console.log('failed'+ error);
+      dispatch(toggleLoading());
+
     }
+
   }
 };
 
  const productList = state => state.cartSlice.products;
  const cartList = state => state.cartSlice.cartProducts;
+ const loading = state => state.cartSlice.loading;
 
+ export const getLoading = createSelector(
+   loading,
+   (item) => item
+ );
+ 
  export const getProducts = createSelector(
   productList,
   (items) => items.slice(0,10)
